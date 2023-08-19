@@ -10,7 +10,20 @@
 Wrapper for the [Black](https://github.com/psf/black) python formatter that let's me control the indent size.
 Because the developer should be in control.
 
-Usage: `black-indent filename 2` to set indentation to 2 spaces.
+## Installation
+To install, clone this repo and run `make install`
+```
+git clone https://github.com/astrobarker/black-indent.git
+make install
+```
+to install `black-indent` and its man page at the root level.
+
+## Usage
+run 
+```
+black-indent filename 2
+```
+to set indentation to 2 spaces.
 
 ```
 Usage: 
