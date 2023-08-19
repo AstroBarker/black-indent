@@ -39,7 +39,7 @@ jobs:
         cp tests/test.py old.py
         ./local/usr/bin/black-indent tests/test.py
         python tests/test.py > out.dat
-        diff tests/old.dat tests/test.gold
+        diff tests/out.dat tests/test.gold
         if [[ $? != 0 ]]; then exit 1; fi
         rm tests.out.dat
         rm old.py
