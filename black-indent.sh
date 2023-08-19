@@ -31,9 +31,9 @@ Options:
   target_indent  desired indentation level (default=2)
 "
 
-options=$(getopt -o hV --long version,help -n 'change-indent' -- "$@")
-
-if [ $? != 0 ]; then echo "Terminating..." >&2 ; exit 1 ; fi
+if ! options=$(getopt -o hV --long version,help -n 'change-indent' -- "$@"); then
+  echo "Terminating..." >&2; exit 1
+fi
 
 eval set -- "$options"
 
@@ -65,8 +65,9 @@ fi
 # ============================================================================
 from=4
 to=${2:-2}
-echo $1
-$(black $1)
-unexpand --first-only -t $from $1 | expand -i -t $to > "$1.temp"
+
+black "$1"
+
+unexpand --first-only -t $from "$1" | expand -i -t "$to" > "$1.temp"
 mv "$1.temp" "$1"
 # ============================================================================
