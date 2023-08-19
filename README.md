@@ -1,4 +1,11 @@
 # black-indent
+      __    __           __         _           __           __ 
+     / /_  / /___ ______/ /__      (_)___  ____/ /__  ____  / /_
+    / __ \/ / __ `/ ___/ //_/_____/ / __ \/ __  / _ \/ __ \/ __/
+   / /_/ / / /_/ / /__/ ,< /_____/ / / / / /_/ /  __/ / / / /_  
+  /_.___/_/\__,_/\___/_/|_|     /_/_/ /_/\__,_/\___/_/ /_/\__/  
+    
+
 Wrapper for the [Black](https://github.com/psf/black) python formatter that let's me control the indent size.
 Because the developer should be in control.
 
