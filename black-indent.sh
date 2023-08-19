@@ -8,6 +8,9 @@
 #  filename       file to be formatted
 #  current_indent current indentation level (default=4)
 #  target_indent  desired indentation level (default=2)
+# Requires:
+#  black (https://github.com/psf/black)
+#  GNU getopt
 # // =--------------------------------------------------------------------= //
 
 # ============================================================================
@@ -55,9 +58,10 @@ if [[ ! -f "$1" ]]; then
 fi
 
 # ============================================================================
-from=${2:-4}
-to=${3:-2}
-$((black $1))
+from=4
+to=${2:-2}
+echo $1
+$(black $1)
 unexpand --first-only -t $from $1 | expand -i -t $to > "$1.temp"
 mv "$1.temp" "$1"
 # ============================================================================

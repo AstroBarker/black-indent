@@ -7,10 +7,10 @@ all:
 install:
 	@mkdir -p $(DESTDIR)$(PREFIX)/bin
 	@mkdir -p $(DESTDIR)$(MANDIR)/man1
-	@cp -p mplcolors.py $(DESTDIR)$(PREFIX)/bin/mplcolors
-	@cp -p mplcolors.1 $(DESTDIR)$(MANDIR)/man1
-	@chmod 755 $(DESTDIR)$(PREFIX)/bin/mplcolors
+	@cp -p black-indent.sh $(DESTDIR)$(PREFIX)/bin/black-indent
+	@cp -p black-indent.1 $(DESTDIR)$(MANDIR)/man1
+	@chmod 755 $(DESTDIR)$(PREFIX)/bin/black-indent
 
 uninstall:
-	@rm -rf $(DESTDIR)$(PREFIX)/bin/mplcolors
-	@rm -rf $(DESTDIR)$(MANDIR)/man1/mplcolors.1*
+	@rm -rf $(DESTDIR)$(PREFIX)/bin/black-indent
+	@rm -rf $(DESTDIR)$(MANDIR)/man1/black-indent.1*
