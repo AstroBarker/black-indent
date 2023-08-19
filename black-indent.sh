@@ -10,10 +10,9 @@
 # // =--------------------------------------------------------------------= //
 # Author: Brandon Barker
 # Purpose: Apply `Black` formatting and Adjusts indentation of file
-# Usage: ./change-indent.sh [-h] filename current_indent target_indent
+# Usage: ./change-indent.sh [-h] filename target_indent
 #  -h             show this help text
 #  filename       file to be formatted
-#  current_indent current indentation level (default=4)
 #  target_indent  desired indentation level (default=2)
 # Requires:
 #  black (https://github.com/psf/black)
@@ -23,13 +22,12 @@
 # ============================================================================
 VERSION="1.0.0"
 usage="Usage: 
-$(basename "$0") [-hv] filename current_indent target_indent
+$(basename "$0") [-hv] filename target_indent
 
 Options: 
   -h, --help     show this help text
   -V, --version  display version
   filename       file to be formatted
-  current_indent current indentation level (default=4)
   target_indent  desired indentation level (default=2)
 "
 
