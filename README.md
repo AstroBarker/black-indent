@@ -12,7 +12,7 @@
 ![Static Badge](https://img.shields.io/badge/release-v1.0.0-blue)
 
 
-Wrapper for the [Black](https://github.com/psf/black) python formatter that let's me control the indent size.
+Wrapper for the [Black](https://github.com/psf/black) python formatter that lets me control the indent size.
 Because the developer should be in control.
 
 ## Installation
