@@ -15,6 +15,8 @@
 Wrapper for the [Black](https://github.com/psf/black) python formatter that lets me control the indent size.
 Because the developer should be in control.
 
+Or just use [ruff](https://astral.sh/ruff).
+
 ## Installation
 To install, clone this repo and run `make install`
 ```
